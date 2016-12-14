@@ -27,8 +27,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		723AA0E68F8EE2DF49C2D306 /* Pods-mnist_MPS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mnist_MPS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mnist_MPS/Pods-mnist_MPS.debug.xcconfig"; sourceTree = "<group>"; };
-		9834E8082AE3504F8016B601 /* Pods_mnist_MPS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mnist_MPS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C935517A1DE8271E007E8308 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		C935517B1DE8271E007E8308 /* MetalCNNBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalCNNBasicViewController.swift; sourceTree = "<group>"; };
 		C935517C1DE8271E007E8308 /* MNISTDeepCNN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNISTDeepCNN.swift; sourceTree = "<group>"; };
@@ -48,7 +46,6 @@
 		C9B2F6661DD2B0B80078A594 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9B2F6691DD2B0B80078A594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9B2F66B1DD2B0B80078A594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8CA2F50A303E098E338242C /* Pods-mnist_MPS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mnist_MPS.release.xcconfig"; path = "Pods/Target Support Files/Pods-mnist_MPS/Pods-mnist_MPS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +59,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		60B0C900B5017688612687E1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9834E8082AE3504F8016B601 /* Pods_mnist_MPS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C96D012B1DF398BD00956D6A /* parameters */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,8 +79,6 @@
 			children = (
 				C9B2F65E1DD2B0B80078A594 /* mnist_MPS */,
 				C9B2F65D1DD2B0B80078A594 /* Products */,
-				F50AC20AA4830C2548259479 /* Pods */,
-				60B0C900B5017688612687E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,15 +106,6 @@
 				C9B2F66B1DD2B0B80078A594 /* Info.plist */,
 			);
 			path = mnist_MPS;
-			sourceTree = "<group>";
-		};
-		F50AC20AA4830C2548259479 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				723AA0E68F8EE2DF49C2D306 /* Pods-mnist_MPS.debug.xcconfig */,
-				E8CA2F50A303E098E338242C /* Pods-mnist_MPS.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +257,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -335,7 +313,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

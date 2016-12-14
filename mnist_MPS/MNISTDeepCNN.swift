@@ -33,6 +33,7 @@ class MNISTDeepCNN {
   var pool: MPSCNNPoolingMax
   var relu: MPSCNNNeuronReLU
   var softmax : MPSCNNSoftMax
+//  var softmax : MPSCNNNeuronTanH
   
   var commandQueue : MTLCommandQueue
   var device : MTLDevice
@@ -93,6 +94,8 @@ class MNISTDeepCNN {
     
     // prepare softmax layer to be applied at the end to get a clear label
     softmax = MPSCNNSoftMax(device: device)
+//    softmax = MPSCNNNeuronSigmoid(device: device)
+
   }
   
   
